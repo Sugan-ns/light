@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <section>
+        <img src="assert/light off.png" id="bulb" width="200">
+        <h1>Click the button ON to turn on light</h1>
+
+        <div class="btn_container"><button id="on" class="bulb_btn" onclick="bulb_on()">on</button>
+        <button id="off" class="bulb_btn" onclick="bulb_off()">off</button></div>
+    </section>
+    <script>
+    function bulb_on(){
+        document.getElementById('bulb').src='assert/light on.png';
+    }
+    function bulb_off(){
+        document.getElementById('bulb').src='assert/light off.png';
+    }
+</script>
+  </body>
+</html>
